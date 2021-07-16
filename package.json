@@ -1,15 +1,15 @@
 {
   "private": true,
   "name": "go-vanity",
-  "version": "1.0.0",
-  "description": "A template for kick starting a Cloudflare Workers project",
+  "version": "0.1.0",
+  "description": "Vanity/custom go import paths using Cloudflare Workers ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write '**/*.{js,css,json,md}'"
   },
   "author": "Jashandeep Sohi <jashandeep.s.sohi@gmail.com>",
-  "license": "MIT",
+  "license": "GPLv3",
   "devDependencies": {
     "prettier": "^1.18.2",
     "yaml-loader": "^0.6.0"
