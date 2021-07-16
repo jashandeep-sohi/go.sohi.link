@@ -1,5 +1,7 @@
 hostname: go.sohi.link
 paths:
+
+  # For example, this will allow `go get go.sohi.link/demo` to find the demo package in this repo
   - path: /demo
     repoRoot: https://github.com/jashandeep-sohi/go.sohi.link
     vcs: git
