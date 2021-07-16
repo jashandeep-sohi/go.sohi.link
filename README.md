@@ -1,3 +1,6 @@
+[![Go Reference](https://pkg.go.dev/badge/go.sohi.link/demo.svg)](https://pkg.go.dev/go.sohi.link/demo)
+[![Deploy](https://github.com/jashandeep-sohi/go.sohi.link/actions/workflows/deploy-prod.yml/badge.svg)](https://github.com/jashandeep-sohi/go.sohi.link/actions/workflows/deploy-prod.yml)
+
 # What?
 
 Vanity/custom go import paths using Cloudflare Workers.
