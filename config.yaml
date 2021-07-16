@@ -1,0 +1,8 @@
+hostname: go.sohi.link
+paths:
+  - path: /demo
+    repoRoot: https://github.com/jashandeep-sohi/go.sohi.link
+    vcs: git
+    home: https://github.com/jashandeep-sohi/go.sohi.link
+    directory: https://github.com/jashandeep-sohi/go.sohi.link/tree/master{/dir}
+    file: https://github.com/jashandeep-sohi/go.sohi.link/blob/master{/dir}/{file}#L{line}
