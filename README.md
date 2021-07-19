@@ -3,7 +3,7 @@
 
 # What?
 
-Vanity/custom go import paths using Cloudflare Workers.
+Vanity/custom Go `import "example.com/foo/pkg/bar"` paths using Cloudflare Workers.
 
 # Where?
 
@@ -11,9 +11,10 @@ https://go.sohi.link/
 
 # Why?
 
-Own your import paths. Avoid vendor (Github, Gitlab, etc) lock-in.
-Do it without hosting anything (CF Workers ~ Serverless™) or paying anything
-(100K requests/day on Free tier).
+- Own your import paths.
+- Avoid vendor lock-in (Github, Gitlab, etc).
+- Do it without managing any servers or paying anything
+  (Cloudflare Workers are basically a version of Serverless™ w/ 100K requests/day on free tier).
 
 # How?
 
@@ -24,15 +25,17 @@ using `git` as the VCS.
 
 More details at https://pkg.go.dev/cmd/go#hdr-Remote_import_paths
 
-This cloudflare worker just generates those `<meta go-* ...>` tag pages based 
-on a static `config.yaml`.
+This Worker just generates those `<meta go-* ...>` tag pages based 
+on`config.yaml`.
 
-# Cookboook
+# Cookbook
 
 Install `wrangler` CF Workers CLI:
 
 ```
 $ npm install -g @cloudflare/wrangler
+# OR
+$ cargo install wrangler
 ```
 
 Login:
