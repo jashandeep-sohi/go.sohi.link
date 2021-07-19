@@ -1,5 +1,7 @@
 import config from "./config.yaml"
 
+const sortedPaths = [...config.paths].sort((a, b) => b.path.length - a.path.length);
+
 /**
  * Respond with a HTML page with <meta go-* ....> tags or index listing all
  * repos.
@@ -11,10 +13,7 @@ async function handleRequest(request) {
 
   const url = new URL(request.url)
 
-  const bestPath = config.paths.filter(p => url.pathname.startsWith(p.path)).sort(
-    (a, b) => b.path.length - a.path.length
-  ).shift()
-
+  const bestPath = sortedPaths.filter(p => url.pathname.startsWith(p.path)).shift();
 
   if (url.pathname == "/" && bestPath === undefined) {
     return HTMLResponse(indexTemplate(config.paths))
